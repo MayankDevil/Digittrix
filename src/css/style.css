@@ -1,0 +1,143 @@
+/*
+-	website-4 "Master"
+-	CopyRight by Master Mayank
+-	Design & Developed by Mayank
+-	CSS : css/style
+*/
+
+*{
+    border: none;
+    outline: none;
+}
+
+/*
+    ----------------------
+    | Bootstrap ICON URL |
+    ----------------------
+*/
+@import url(../assets/bootstrap-icons.min.css);
+
+:root{
+    --bs-white:#ffffff;
+}
+
+/* comman css */
+
+.bi
+{
+    font-size: 1em;
+    color: var(--bs-white);
+}
+
+/*
+    nav section ------------------------
+*/
+
+.icon
+{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
+
+#logo
+{
+    font-size: 30px;
+}
+#logo .icon
+{
+    width: 30px;
+}
+
+#nav .icon2
+{
+    margin: 0 1rem;
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    left: 1441px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+#link1
+{
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.94px;
+    text-align: left;
+}
+.last
+{
+    justify-content: flex-end;
+}
+
+#location
+{
+    width: 160px;
+    height: auto;
+    margin: 0 30px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color:var(--bs-white);
+    background: transparent;
+    border: 1px solid var(--bs-white);
+    border-radius: 10px;
+}
+.user-icon
+{
+    width: 129px;
+    height: 50px;
+    top: 25px;
+    left: 1491px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+/*
+    header section -----------------------
+*/
+#header #student-img
+{
+    margin-top: 3rem;
+}
+
+#header #bar
+{
+    display: flex;
+    width: 90%;
+    border-radius: 10px;
+}
+#header #bar #search
+{
+    width:100% ;
+    margin: 0 10px;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.write
+{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.57px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+#header .last
+{
+    position: relative;
+    /* border: 1px solid green ;  */
+}
+
+#header #diegoStudent
+{
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+}

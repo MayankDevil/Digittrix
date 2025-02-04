@@ -1,7 +1,7 @@
 /*
 -   Digittrix " Assignment Task "
 -	Design & Developed by Mayank
--	CSS : ./src/css/style
+-	CSS : ./src/css/style.css
 */
 
 *{
@@ -30,10 +30,28 @@
     font-size: 1em;
     color: var(--bs-white);
 }
-
+.text-blue
+{
+    color:#204EA2;
+}
 .bg-blue
 {
     background: #204EA2;
+}
+
+.heading
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading .h6
+{
+    font-weight: 550;
+}
+section
+{
+    background: var(--bs-light);
 }
 
 /*
@@ -191,6 +209,7 @@
     padding: 5px 0;
     text-decoration: none;
     color:var(--bs-white);
+    font-size: small;
 }
 #copyright
 {
@@ -202,3 +221,120 @@
     margin: 2rem 0;
     display: inline-block;
 }
+/*
+    testimonial css --------------------
+*/
+
+#testimonial .row .col
+{
+    display: grid;
+}
+
+.testimonialBox
+{
+    position: relative;
+    height: 200px;
+    margin: 1rem 0;
+}
+.testimonial_head .img-thumbnail
+{
+    object-fit: cover;
+    padding: 5px;
+    width: 100% !important;
+    aspect-ratio: 1/1   ;
+}
+.testimonial_head h5
+{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.testimonial_head
+{
+    position: absolute;
+    z-index: 5;
+    /* margin-bottom: -30px; */
+}
+.testimonial_body
+{
+    position: absolute;
+    z-index: 0;
+    bottom:0;
+    height: auto;
+    padding:2rem 1rem 0.5rem 1rem;
+    background: var(--bs-white);
+    box-shadow: 1px 1px 5px #343a40;
+    border-radius: 10px;
+}
+/*
+    blog css --------------------------
+*/
+.blogBox
+{
+    margin: 1rem 0;
+    background: transparent;
+    border: none;
+}
+.blogBox .card-body
+{
+    position: relative;
+    padding: 1rem 0;
+    height: 220px;
+}
+.blogBox .card-body a
+{
+    position: absolute;
+    bottom: 10%;
+}
+/*
+    consultant css -------------------
+*/
+.consultantBox .card-img
+{
+    padding: 5px;
+}
+.consultantBox .btn
+{
+    font-weight: bold;
+}
+/*
+    institute css --------------------
+*/
+.instituteBox
+{
+    overflow: hidden;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background: red;
+    border-radius: 10px;
+}
+.instituteBox .inst_img
+{
+    position: absolute;
+    z-index: 0;
+}
+.instituteBox .detail_box
+{
+    padding: 10px;
+    position: absolute;
+    z-index: 3;
+    bottom:0;
+    /* height: 100%; */
+    /* background: ; */
+    background: linear-gradient(to top, #000000, rgba(52, 58, 64, 0.1));
+}
+.instituteBox h5
+{
+    /* font-size: 1.2rem; */
+    font-weight:bolder;
+    /* line-height: 2rem; */
+}
+.instituteBox a
+{
+    font-size: 16px;
+    padding: 10px 0;
+    text-decoration: none;
+}
+/*
+    the end ===========================
+*/

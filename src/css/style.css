@@ -1,8 +1,7 @@
 /*
--	website-4 "Master"
--	CopyRight by Master Mayank
+-   Digittrix " Assignment Task "
 -	Design & Developed by Mayank
--	CSS : css/style
+-	CSS : ./src/css/style
 */
 
 *{
@@ -19,14 +18,22 @@
 
 :root{
     --bs-white:#ffffff;
+    --bg:#204EA2;
 }
 
-/* comman css */
+/*
+    comman css --------------------------
+*/
 
 .bi
 {
     font-size: 1em;
     color: var(--bs-white);
+}
+
+.bg-blue
+{
+    background: #204EA2;
 }
 
 /*
@@ -140,4 +147,58 @@
     position: absolute;
     bottom: 5%;
     right: 10%;
+}
+/*
+    footer css ----------------------
+*/
+#bottomLogo
+{
+    width: 153px;
+    height: auto;
+    object-fit: contain;
+}
+#linklist1, #linklist2
+{
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--bs-white);
+}
+#linklist1 p
+{
+    padding: 1rem 3rem 1rem 0;
+    line-height: 30px;
+}
+#linklist1 h5
+{
+    padding: 1rem 0;
+}
+#linklist1 .linkbox a
+{
+    font-weight: 500;
+    line-height: 2rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#linklist2 h6
+{
+    font-weight: bold;
+    line-height: 30px;
+}
+#linklist2 .linkbox a
+{
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    color:var(--bs-white);
+}
+#copyright
+{
+    background: #0C4197;
+}
+
+#social .col-1
+{
+    margin: 2rem 0;
+    display: inline-block;
 }

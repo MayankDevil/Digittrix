@@ -14,6 +14,14 @@
     --bg:#204EA2;
     --special:Caveat;
 }
+#main
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
 
 
 /*
@@ -460,8 +468,12 @@ section
     {
         display: flex;
         flex-wrap: nowrap;
-        overflow: hidden;
+        overflow-x:auto;
         scroll-snap-type: x mandatory ;
+    }
+    .responsiveRule > div
+    {
+        scroll-snap-align: start;
     }
     .responsiveRule::-webkit-scrollbar,
     .responsiveRule::-webkit-scrollbar-thumb

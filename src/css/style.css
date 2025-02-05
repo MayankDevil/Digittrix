@@ -391,9 +391,9 @@ section
 /*
     addvertisment css --------------------------
 */
-#addvertisment
+/* #addvertisment
 {
-}
+} */
 #searchBox .icon3
 {
     width: 20px;
@@ -468,13 +468,6 @@ section
     {
         background: transparent !important;
     }
-
-    .responsiveRule > div
-    {
-        margin: 10px;
-        width: 300px !important;
-        scroll-snap-type: y mandatory ;
-    }
     #testimonial .responsiveRule > div
     {
         width: 400px !important;
@@ -547,11 +540,13 @@ section
     }
     .consultantBox .cardBody .rating img
     {
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
     }
     #institute .responsiveRule > div
     {
+        margin: 1rem;
         width: 300px !important;
         scroll-snap-type: y mandatory ;
     }
@@ -559,9 +554,49 @@ section
     {
         width: 300px;
     }
-    #menu
+    #blog .responsiveRule > div
     {
+        height: 400px;
+        width: 400px ;
+        aspect-ratio: 1/1;
+        scroll-snap-type: y mandatory ;
+    }
+    #blog .col-3
+    {
+        margin-bottom: -100px;
+    }
+
+    #blog .blogBox
+    {
+        width: 380px;
+        display: grid;
+        grid-template-columns: 150px auto !important;
         box-shadow: 1px 1px 5px var(--bs-dark);
+    }
+    #blog .blogBox .card-img
+    {
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+    }
+    #blog .blogBox .card-body
+    {
+        padding: 1rem 0;
+        height: 200px;
+    }
+    #blog .blogBox .card-title
+    {
+        font-size: 1.1rem;
+    }
+    #blog .blogBox .card-text
+    {
+        height: 80px;
+    }
+    #blog .blogBox a
+    {
+        display: inline-block;
+        padding:5px 0;
     }
 }
 
@@ -589,10 +624,7 @@ section
         font-weight: bold;
         text-align: left;
     }
-    #blog .responsiveRule > div
-    {
-        width: 500px !important;
-    }
+    
 }
 
 @media screen and (max-width:576px) {

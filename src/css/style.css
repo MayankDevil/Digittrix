@@ -51,7 +51,7 @@
 }
 section
 {
-    background: var(--bs-light);
+    /* background: var(--bs-light); */
 }
 
 /*
@@ -119,6 +119,10 @@ section
     gap: 0px;
     opacity: 0px;
 
+}
+#navBgImage
+{
+    
 }
 
 /*
@@ -216,7 +220,7 @@ section
     background: #0C4197;
 }
 
-#social .col-1
+#social a
 {
     margin: 2rem 0;
     display: inline-block;
@@ -276,18 +280,20 @@ section
 }
 .blogBox .card-body
 {
-    position: relative;
     padding: 1rem 0;
     height: 220px;
 }
-.blogBox .card-body a
+.blogBox .card-body .card-text
 {
-    position: absolute;
-    bottom: 10%;
+    height: 100px;
 }
 /*
     consultant css -------------------
 */
+.consultantBox
+{
+    margin: 1rem auto;
+}
 .consultantBox .card-img
 {
     padding: 5px;
@@ -301,6 +307,7 @@ section
 */
 .instituteBox
 {
+    margin: 1rem auto;
     overflow: hidden;
     position: relative;
     height: 350px;
@@ -310,6 +317,8 @@ section
 }
 .instituteBox .inst_img
 {
+    width: 100%;
+    object-fit: cover;
     position: absolute;
     z-index: 0;
 }
@@ -335,6 +344,107 @@ section
     padding: 10px 0;
     text-decoration: none;
 }
+/*
+    add css --------------------------
+*/
+#add1
+{
+    background: url();
+}
+
+/*
+    ==================
+    [ RESPONSIVE CSS ] -----------------
+    ==================
+*/
+
+@media screen and (max-width:960px) {
+/*     
+    section
+    {
+        background: green;
+    } */
+    #blog .heading .frist h4,
+    .sideheading .first h4,
+    #consultant .sideheading h4
+    {
+        font-size: 1.3rem;
+        color: var(--bs-dark) !important;
+    }
+    .sideheading .first .card-text,
+    #consultant .sideheading .card-text
+    {
+        display: none !important;
+    }
+
+    .responsiveRule
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        scroll-snap-type: x mandatory ;
+    }
+    .responsiveRule::-webkit-scrollbar,
+    .responsiveRule::-webkit-scrollbar-thumb
+    {
+        background: transparent !important;
+    }
+
+    .responsiveRule > div
+    {
+        margin: 10px;
+        width: 300px !important;
+        scroll-snap-type: y mandatory ;
+    }
+    #testimonial .responsiveRule > div
+    {
+        width: 400px !important;
+        scroll-snap-type: y mandatory ;
+    }
+    #consultant .responsiveRule > div
+    {
+        width: 300px;
+        scroll-snap-type: y mandatory ;
+    }
+    #institute .responsiveRule > div
+    {
+        width: 300px !important;
+        scroll-snap-type: y mandatory ;
+    }
+    .instituteBox
+    {
+        width: 300px;
+    }
+    .blogBox
+    {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+/*     
+    section{
+        background: red;
+    } */
+    #header
+    {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    
+
+    /* section{
+        background: yellow;
+    } */
+    #footer
+    {
+        display: none;
+    }
+}
+
 /*
     the end ===========================
 */

@@ -36,38 +36,46 @@
             [ nav section ] -----------
             ===============
         -->
-        <nav class="bg-blue" id="nav">
-            <div class="container">
-                <div class="row py-2">
+        <nav class="" id="nav">
+            <div class="bg-blue">
+                <div class="container-lg">
+                    <div class="d-none d-md-block">
+                        <div class="row py-2">
+                            <div class="col-7 d-flex align-items-center" class="first">
+                                <!-- (logo) -->
+                                <div class="d-flex" id="logo">
+                                    <img src="public/svg/logo.svg" alt="" class="icon"><strong class="text-light ms-2">  LOGO </strong>
+                                </div>
+                                <!-- (location) -->
+                                <select name="" class="" id="location">
 
-                    <div class="col-7 d-flex align-items-center" class="first">
-                        <!-- (logo) -->
-                        <div class="d-flex" id="logo">
-                            <img src="public/svg/logo.svg" alt="" class="icon"><strong class="text-light ms-2">  LOGO </strong>
+                                    <option> <span class="bi geo-alt-fill text-light"></span> Location</option>
+
+                                </select>
+                                
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-end col-5" class="last">
+
+                                <a class="text-light mx-2" id="link1"> Become a Consultant </a>
+
+                                <img src="public/svg/bell.svg" alt="" class="icon icon2">
+                                <img src="public/svg/chat.svg" alt="" class="icon icon2">
+
+                                <div class="user-icon">
+                                    <img src="public/svg/user.svg" alt="" class="user-img">
+                                </div>
+
+                            </div>
+
                         </div>
-                        <!-- (location) -->
-                        <select name="" class="" id="location">
-
-                            <option> <span class="bi geo-alt-fill text-light"></span> Location</option>
-
-                        </select>
-                        
                     </div>
-
-                    <div class="d-flex align-items-center justify-content-end col-5" class="last">
-
-                        <a class="text-light mx-2" id="link1"> Become a Consultant </a>
-
-                        <img src="public/svg/bell.svg" alt="" class="icon icon2">
-                        <img src="public/svg/chat.svg" alt="" class="icon icon2">
-
-                        <div class="user-icon">
-                            <img src="public/svg/user.svg" alt="" class="user-img">
-                        </div>
-
-                    </div>
-
                 </div>
+            </div>
+            <div class="container-lg d-block d-sm-none bg-blue" id="navBgImage">
+
+                <div class="lead text-white pt-3 pb-5"> Lorem ipsum, dolor sit amet consectetur ! </div>
+
             </div>
         </nav>
         <!--
@@ -76,7 +84,7 @@
             ==================
         -->
         <header class="bg-blue" id="header">
-            <div class="container">
+            <div class="container-lg">
                 <div class="row pt-3">
 
                     <!-- ( first ) -->
@@ -129,29 +137,71 @@
                 </div>
             </div>
         </header>
+
+        <!--
+            =========================
+            [ addvertisment section ] -----------
+            =========================
+        -->
+        <section class="d-block d-md-none"  id="addvertisment">
+            <!-- search -->
+            <div class="container-lg">
+                <div class="p-1 my-3 mx-2 bg-white shadow" id="bar">
+
+                    <input type="text" name="searchbar" placeholder="Search anything here" id="search">
+
+                    <button class="btn btn-primary bg-blue px-4"> <img src="public/svg/search.svg" alt="search"> </button>
+
+                </div>
+
+            </div>
+            <!-- (adds) -->
+            <div class="d-block d-sm-none">
+                <div class="contianer-lg">
+                    <div class="row">
+                        <div class="col-12 p-3">
+                            <a href="#" class="" id="add1">
+                                <img src="./public/addsvg/1.svg" alt="" class="mx-3">
+                            </a>
+                        </div>
+                        <div class="col-12 p-3">
+                            <a href="#" class="" id="add2">
+                                <img src="./public/addsvg/2.svg" alt="" class="mx-3">
+                            </a>
+                        </div>
+                        <div class="col-12 p-3">
+                            <a href="#" class="" id="add3">
+                                <img src="./public/addsvg/3.svg" alt="" class="mx-3">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--
             =======================
             [ consultants section ] -----------
             =======================
         -->
         <section id="consultant">
-            <div class="container">
-                <div class="row py-5 my-3 border">
+            <div class="container-lg">
+                <div class="row py-5 my-0 my-md-3">
                     <!-- (two row heading) -->
-                    <div class="col-4 d-flex align-items-center">
-                        <div class="text-center">
-                            <div class="first">
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-between py-3 py-lg-1 sideheading">
+                        <div class="row  align-items-center text-start text-lg-center w-100">
+                            <div class="col-8 col-lg-12">
                                 <h4 class="text-blue"> Top Rated Consultants </h4>
                                 <div class="card-text"> Our trusted partner in navigation the immigration journey </div>
                             </div>
-                            <div class="last my-3">
-                                <a href="#" class="btn btn-primary bg-blue px-5"> View all </a>
+                            <div class="col text-end my-2 last">
+                                <a href="#" class="btn btn-primary bg-blue py-2 px-lg-5 d-block"> View all </a>
                             </div>
                         </div>
                     </div>
                     <!-- ( consultant cards ) -->
                     <div class="col">
-                        <div class="row">
+                        <div class="row responsiveRule">
 
                             <div class="col-4">
                                 <!-- (card1) -->
@@ -177,53 +227,9 @@
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
-                            </div>
-
-                            <div class="col-4">
-                                <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
-                            </div>
-
-                            <div class="col-4">
-                                <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
-                            </div>
-
-                            <div class="col-4">
-                                <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
-                            </div>
-
-                            <div class="col-4">
-                                <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!--
-            ======================
-            [ institutes section ] -----------
-            ======================
-        -->
-        <section id="institutes">
-            <div class="container">
-                <div class="row py-5 my-3 border">
-                    
-                    <!-- ( institute cards ) -->
-                    <div class="col">
-                        <div class="row">
-
-                            <div class="col-4">
-                                <!-- (card1) -->
                                 <div class="instituteBox">
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="card-img inst_img h-100"/>
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
 
                                     <div class="detail_box">
 
@@ -239,40 +245,214 @@
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--
+            ======================
+            [ institutes section ] -----------
+            ======================
+        -->
+        <section id="institute">
+            <div class="container-lg">
+                <div class="row py-5 my-0 my-md-3">
+                    
+                    <!-- ( institute cards ) -->
+                    <div class="col">
+                        <div class="row responsiveRule">
+
+                            <div class="col-12 col-lg-4">
+                                <!-- (card1) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <img src="./public/svg/card.svg" alt="" class="w-100 h-100">
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
                             </div>
 
                         </div>
                     </div>
                     <!-- (two row heading) -->
-                    <div class="col-4 d-flex align-items-center">
-                        <div class="text-center">
-                            <div class="first">
+                    <div class="col-12 col-lg-4 order-first order-lg-last d-flex align-items-center justify-content-between py-3 py-lg-1 sideheading">
+                        <div class="row  align-items-center text-start text-lg-center w-100">
+                            <div class="col-8 col-lg-12 first">
                                 <h4 class="text-blue"> Popular Institutes </h4>
                                 <div class="card-text"> Lorem Ipsum is simply dummy text for printing and typesetting industry. </div>
                             </div>
-                            <div class="last my-3">
-                                <a href="#" class="btn btn-primary bg-blue px-5"> View all </a>
+                            <div class="col text-end my-5 last">
+                                <a href="#" class="btn btn-primary bg-blue py-2 px-lg-5 d-block"> View all </a>
                             </div>
                         </div>
                     </div>
@@ -286,19 +466,19 @@
             =======================
         -->
         <section class="" id="testimonial">
-            <div class="container py-5 my-5">
+            <div class="container-lg py-5  my-0 my-md-3">
                 <!-- ( heading ) -->
                 <div class="heading py-3">
                     <div class="first">
                         <h4 class="text-blue"> Testimonials </h4>
-                        <div class="h6"> Satisfied client who achived their, immigration dreams with us </div>
+                        <div class="h6 d-none d-md-block"> Satisfied client who achived their, immigration dreams with us </div>
                     </div>
                     <div class="last">
                         <a href="#" class="btn btn-primary bg-blue px-5"> View all </a>
                     </div>
                 </div>
                 <!-- ( client cards ) -->
-                <div class="row">
+                <div class="row responsiveRule">
 
                     <div class="col-4">
                         <!-- (card1) -->
@@ -397,19 +577,19 @@
             ================
         -->
         <section class="" id="blog">
-            <div class="container py-5 my-5">
+            <div class="container-lg py-5  my-0 my-md-3">
                 <!-- ( heading ) -->
                 <div class="heading py-3">
                     <div class="first">
-                        <h4 class="text-blue"> Recent Blogs </h4>
-                        <div class="h6"> Stay Updated with Our Latest Immigration Insights! </div>
+                        <h4 class="text-blue overwrite"> Recent Blogs </h4>
+                        <div class="h6 d-none d-md-block"> Stay Updated with Our Latest Immigration Insights! </div>
                     </div>
                     <div class="last">
                         <a href="#" class="btn btn-primary bg-blue px-5"> View all </a>
                     </div>
                 </div>
                 <!-- ( ... ) -->
-                <div class="row">
+                <div class="row  responsiveRule">
 
                     <div class="col-3">
                         <!-- (card1) -->
@@ -469,20 +649,20 @@
             ==================
         -->
         <footer class="bg-blue" id="footer">
-            <div class="container">
+            <div class="container-lg">
                 <div class=" text-white">
 
                     <!-- ( linkset 1) -->
                     <div class="w-100" id="linklist1">
                         <div class="row">
                             
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <img src="public/logo.png" alt="" id="bottomLogo">
 
                                 <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus assumenda, doloribus animi aliquam atque ea maxime laborum cumque sint rerum, incidunt harum, quis expedita. Laboriosam eius dicta perspiciatis totam voluptatem enim. Autem qui consequuntur alias? </p>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-3">
 
                                 <h5 class="h5"> Quick Links </h5>
 
@@ -495,7 +675,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-md-3 py-4 py-md-2">
                                 
                                 <h5 class="h5"> Contact Us </h5>
 
@@ -513,12 +693,12 @@
                     <div class="w-100" id="linklist2">
                         <div class="row">
                             <!-- (first) -->
-                            <div class="col">
+                            <div class="col-12 col-md-6  py-3 py-md-1">
 
                                 <h6 class="h6"> Immigration Consultants </h6>
 
                                 <div class="row">
-                                    <div class="col linkbox">
+                                    <div class="col-12 col-sm-6 linkbox">
                                         <a href="#" class=""> Immigration Consultants near me </a>
                                         <a href="#" class=""> Immigration Consultants in Mohali </a>
                                         <a href="#" class=""> Immigration Consultants in Chandigarh </a>
@@ -528,7 +708,7 @@
                                         <a href="#" class=""> Immigration Consultants in Faridkot </a>
                                     </div>
 
-                                    <div class="col linkbox">
+                                    <div class="col-12 col-sm-6 linkbox">
                                         <a href="#" class=""> Immigration Consultants near me </a>
                                         <a href="#" class=""> Immigration Consultants in Mohali </a>
                                         <a href="#" class=""> Immigration Consultants in Chandigarh </a>
@@ -541,12 +721,12 @@
                                 
                             </div>
                             <!-- (last) -->
-                            <div class="col">
+                            <div class="col-12 col-md-6  py-3 py-md-1">
 
                                 <h6 class="h6"> Immigration Consultants </h6>
 
                                 <div class="row">
-                                    <div class="col linkbox">
+                                    <div class="col-12 col-sm-6 linkbox">
                                         <a href="#" class=""> Immigration Consultants near me </a>
                                         <a href="#" class=""> Immigration Consultants in Mohali </a>
                                         <a href="#" class=""> Immigration Consultants in Chandigarh </a>
@@ -556,7 +736,7 @@
                                         <a href="#" class=""> Immigration Consultants in Faridkot </a>
                                     </div>
 
-                                    <div class="col linkbox">
+                                    <div class="col-12 col-sm-6 linkbox">
                                         <a href="#" class=""> Immigration Consultants near me </a>
                                         <a href="#" class=""> Immigration Consultants in Mohali </a>
                                         <a href="#" class=""> Immigration Consultants in Chandigarh </a>
@@ -575,19 +755,19 @@
                     <div class="w-100" id="social">
 
                         <div class="row">
-                            <a href="#" class="col-1">
+                            <a href="#" class="col-2 col-md-1">
                                 <img src="public/svg/social/facebook.svg" alt="facebook" class="media">
                             </a>
-                            <a href="#" class="col-1">
+                            <a href="#" class="col-2 col-md-1">
                                 <img src="public/svg/social/instragram.svg" alt="facebook" class="media">
                             </a>
-                            <a href="#" class="col-1">
+                            <a href="#" class="col-2 col-md-1">
                                 <img src="public/svg/social/twitter.svg" alt="facebook" class="media">
                             </a>
-                            <a href="#" class="col-1">
+                            <a href="#" class="col-2 col-md-1">
                                 <img src="public/svg/social/music.svg" alt="facebook" class="media">
                             </a>
-                            <a href="#" class="col-1">
+                            <a href="#" class="col-2 col-md-1">
                                 <img src="public/svg/social/youtube.svg" alt="facebook" class="media">
                             </a>
                         </div>
@@ -597,8 +777,8 @@
                 </div>
             </div>
             <!-- (copyright) -->
-            <div class="col-12" id="copyright">
-                <div class="container p-3 text-center">
+            <div class="" id="copyright">
+                <div class="container-lg p-3 text-center">
 
                     <b class="text-white">All Rights Reserved by <a href="https://mayankdevil.github.io/MayankDevil" class="text-white text-decoration-none"> Mayank </a></b>
                     
@@ -606,6 +786,34 @@
             </div>
         </footer>
         
+        <!--
+            ================
+            [ menu section ] -----------
+            ================
+        -->
+        <section class="d-block d-sm-none bg-white" id="menu">
+            <div class="contianer-lg">
+                <div class="row mx-3 my-3">
+
+                    <div class="col-4">
+                        <a href="#" class="" id="add1">
+                            <img src="./public/menu/home.svg" alt="" class="mx-3">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="" id="add2">
+                            <img src="./public/menu/application.svg" alt="" class="mx-3">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="" id="add3">
+                            <img src="./public/menu/profile.svg" alt="" class="mx-3">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
     </main>
     <!--

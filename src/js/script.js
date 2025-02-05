@@ -3,12 +3,12 @@
 -	Design & Developed by Mayank
 -	JavaScript : ./src/css/script.js
 */
-try
-{
+try {
     document.title = "MayankDevil"
+
+    // todo logical code application here
 }
-catch (error)
-{
+catch (error) {
     console.error(error.message)
 }
 /* the end --- */

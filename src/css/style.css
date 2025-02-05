@@ -9,27 +9,34 @@
     outline: none;
 }
 
-/*
-    ----------------------
-    | Bootstrap ICON URL |
-    ----------------------
-*/
-@import url(../assets/bootstrap-icons.min.css);
-
 :root{
     --bs-white:#ffffff;
     --bg:#204EA2;
+    --special:Caveat;
+}
+
+
+/*
+    -------------------
+    | Google Font URL |
+    -------------------
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+*/
+
+.CaveatFont {
+  font-family: 'Caveat', serif !important;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-size: 150%;
 }
 
 /*
     comman css --------------------------
 */
 
-.bi
-{
-    font-size: 1em;
-    color: var(--bs-white);
-}
 .text-blue
 {
     color:#204EA2;
@@ -77,8 +84,8 @@ section
 #nav .icon2
 {
     margin: 0 1rem;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: auto;
     top: 35px;
     left: 1441px;
     gap: 0px;
@@ -88,10 +95,9 @@ section
 #link1
 {
     text-decoration: none !important;
-    font-size: 18px;
+    font-size: 16px;
+    font-size: smaller;
     font-weight: 600;
-    line-height: 21.94px;
-    text-align: left;
 }
 .last
 {
@@ -110,19 +116,32 @@ section
     border: 1px solid var(--bs-white);
     border-radius: 10px;
 }
-.user-icon
+.user-img
 {
-    width: 129px;
-    height: 50px;
-    top: 25px;
-    left: 1491px;
-    gap: 0px;
-    opacity: 0px;
-
+    width: 100px;
+    height: auto;
 }
 #navBgImage
 {
-    
+    overflow: hidden;
+    height: 80px;
+    position: relative;
+}
+#navBgImage .lead
+{
+    top:5%;
+    left: 10%;
+    z-index: 2;
+    position: absolute;
+    font-size: 120%;
+}
+#headerImage
+{
+    z-index: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
 }
 
 /*
@@ -167,6 +186,8 @@ section
 #header #diegoStudent
 {
     position: absolute;
+    font-size: small;
+    font-weight: bold;
     bottom: 5%;
     right: 10%;
 }
@@ -237,7 +258,7 @@ section
 .testimonialBox
 {
     position: relative;
-    height: 200px;
+    height: 220px;
     margin: 1rem 0;
 }
 .testimonial_head .img-thumbnail
@@ -285,22 +306,37 @@ section
 }
 .blogBox .card-body .card-text
 {
+    font-size: medium;
     height: 100px;
+}
+.blogBox a
+{
+    display: inline-block;
+    font-weight: bold;
 }
 /*
     consultant css -------------------
 */
+
 .consultantBox
 {
-    margin: 1rem auto;
+    margin: 1rem 0;
+    max-height: 400px;
 }
 .consultantBox .card-img
 {
-    padding: 5px;
+   padding: 5px;
+   width:100%;
+   height: 180px;
+}
+.consultantBox .cardBody
+{
+    padding:10px  5px;
 }
 .consultantBox .btn
 {
     font-weight: bold;
+    font-size: 80%;
 }
 /*
     institute css --------------------
@@ -317,7 +353,7 @@ section
 }
 .instituteBox .inst_img
 {
-    width: 100%;
+    width: 200%;
     object-fit: cover;
     position: absolute;
     z-index: 0;
@@ -338,18 +374,56 @@ section
     font-weight:bolder;
     /* line-height: 2rem; */
 }
+.instituteBox .card-text
+{
+    font-size: medium;
+}
 .instituteBox a
 {
+    letter-spacing: 0.5px;
+    display: block;
     font-size: 16px;
-    padding: 10px 0;
+    font-size: small;
+    font-weight: bold;
+    padding: 15px 0;
     text-decoration: none;
 }
 /*
-    add css --------------------------
+    addvertisment css --------------------------
 */
-#add1
+#addvertisment
 {
-    background: url();
+}
+#searchBox .icon3
+{
+    width: 20px;
+}
+#searchBox .icon3:last-child
+{
+    width: 15px;
+    margin-right:5px;
+}
+#searchBox #searchHere
+{
+    width: 100%;
+    padding: 0;
+    color:var(--bs-secondary);
+    font-size: larger;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+#alert
+{
+    font-size: small;
+}
+#alert a
+{
+    font-weight: bolder;
+}
+:is(#add1,#add2,#add3) img
+{
+    width: 100%;
+    padding: 0 5%;
 }
 
 /*
@@ -364,7 +438,12 @@ section
     {
         background: green;
     } */
-    #blog .heading .frist h4,
+    #header
+    {
+        display: none;
+    }
+    #testimonial .heading .first h4,
+    #blog .heading .first h4,
     .sideheading .first h4,
     #consultant .sideheading h4
     {
@@ -406,6 +485,71 @@ section
         width: 300px;
         scroll-snap-type: y mandatory ;
     }
+    .consultantBox
+    {
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+    }
+    .consultantBox .card-img
+    {
+        z-index: 5;
+        padding: 0;
+        position: absolute;
+        height: 100%;
+    }
+    .consultantBox .cardBody
+    {
+        width: 100%;
+        color:var(--bs-white);
+        height: 100%;
+        z-index: 10;
+        position: absolute;
+        background: rgba(52, 58, 64, 0.5);
+    }
+    .consultantBox .cardBody .border-top
+    {
+        border: none !important;
+    }
+    .consultantBox .cardBody .btn
+    {
+        z-index: 11;
+        position: absolute;
+        top:5%;
+        right:5%;
+    }
+    .consultantBox .cardBody h5
+    {
+        font-size: 2rem;
+        width: 100%;
+        z-index: 11;
+        position: absolute;
+        top:70%;
+        left: 5%;
+    }
+    .consultantBox .cardBody :is(.star_box,p, img)
+    {
+        display: none;
+    }
+    .consultantBox .cardBody .rating
+    {
+        font-size: 2rem;
+        width: 90%;
+        z-index: 11;
+        position: absolute;
+        bottom:3%;
+        left: 5%;
+    }
+    .consultantBox .cardBody .rating div
+    {
+        font-weight: bold;
+    }
+    .consultantBox .cardBody .rating img
+    {
+        width: 20px;
+        height: 20px;
+    }
     #institute .responsiveRule > div
     {
         width: 300px !important;
@@ -415,21 +559,39 @@ section
     {
         width: 300px;
     }
-    .blogBox
+    #menu
     {
-        width: 300px;
+        box-shadow: 1px 1px 5px var(--bs-dark);
     }
-
 }
 
 @media screen and (max-width:720px) {
-/*     
-    section{
-        background: red;
-    } */
-    #header
+     
+    /*section
     {
-        display: none;
+        background: red;
+    }*/ 
+    
+    #testimonial .heading .first h4,
+    #blog .heading .first h4,
+    .sideheading .first h4,
+    #consultant .sideheading h4
+    {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: var(--bs-dark) !important;
+    }
+    :is(#testimonial .heading,
+    #blog .heading,
+    .sideheading,
+    #consultant .sideheading) .last a
+    {
+        font-weight: bold;
+        text-align: left;
+    }
+    #blog .responsiveRule > div
+    {
+        width: 500px !important;
     }
 }
 
@@ -443,7 +605,14 @@ section
     {
         display: none;
     }
+    #navBgImage .lead
+    {
+        top:5%;
+        left: 5%;
+        font-size: medium;
+    }
 }
+
 
 /*
     the end ===========================

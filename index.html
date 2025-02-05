@@ -16,9 +16,14 @@
         ---------
     -->    
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./src/assets/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="./src/assets/bootstrap-icons.min.css"> -->
     <link rel="stylesheet" href="./src/css/style.css">
+
 
 </head>
 
@@ -41,21 +46,28 @@
                 <div class="container-lg">
                     <div class="d-none d-md-block">
                         <div class="row py-2">
-                            <div class="col-7 d-flex align-items-center" class="first">
+                            <div class="col-6 d-flex align-items-center" class="first">
                                 <!-- (logo) -->
                                 <div class="d-flex" id="logo">
                                     <img src="public/svg/logo.svg" alt="" class="icon"><strong class="text-light ms-2">  LOGO </strong>
                                 </div>
                                 <!-- (location) -->
-                                <select name="" class="" id="location">
+                                <div name="" class="d-flex justify-content-between" id="location">
 
-                                    <option> <span class="bi geo-alt-fill text-light"></span> Location</option>
+                                    <img src="./public/svg/location.svg" alt="">
+                                    <!-- <label for="#locationSelect"> Location </label> -->
+                                    
+                                    <select name="" class="w-100 text-white bg-blue" id="">
+                                        <option value=""> &nbsp; Location </option>
+                                        <option value=""> Russia </option>
+                                        <option value=""> Japan </option>
+                                    </select>
 
-                                </select>
-                                
+                                </div>
+
                             </div>
 
-                            <div class="d-flex align-items-center justify-content-end col-5" class="last">
+                            <div class="d-flex align-items-center justify-content-end col-6" class="last">
 
                                 <a class="text-light mx-2" id="link1"> Become a Consultant </a>
 
@@ -72,9 +84,11 @@
                     </div>
                 </div>
             </div>
-            <div class="container-lg d-block d-sm-none bg-blue" id="navBgImage">
+            <div class="container-lg d-block d-md-none" id="navBgImage">
 
-                <div class="lead text-white pt-3 pb-5"> Lorem ipsum, dolor sit amet consectetur ! </div>
+                <div class="lead text-white pt-3 pb-5"> 20% Lorem ipsum, dolor sit amet consectetur ! </div>
+                
+                <img src="./public/addsvg/head.svg" id="headerImage" />
 
             </div>
         </nav>
@@ -95,7 +109,7 @@
                         <!-- ( center speach ) -->
                         <div class="py-5 mt-5 text-white" id="superword">
 
-                            <h2> Guiding Your <span> Path to Success </span> </h2>
+                            <h2> Guiding Your <span class="CaveatFont"> Path to Success </span> </h2>
                             <h2> Expert Consultation at Your Service </h2>
 
                             <!-- ( search bar ) -->
@@ -114,7 +128,7 @@
                         <div class="w-100 py-4"></div>
 
                         <!-- ( bottom section ) -->
-                        <div class="row mt-5 bottom">
+                        <div class="row mt-5 mb-3 bottom">
                             <a href="#" class="col">
                                 <img src="public/svg/bussiness.svg" alt="">
                             </a>
@@ -144,34 +158,38 @@
             =========================
         -->
         <section class="d-block d-md-none"  id="addvertisment">
-            <!-- search -->
+            <!-- (search) -->
             <div class="container-lg">
-                <div class="p-1 my-3 mx-2 bg-white shadow" id="bar">
+                <div class="d-flex bg-white p-3 my-3 shadow rounded" id="searchBox">
 
-                    <input type="text" name="searchbar" placeholder="Search anything here" id="search">
+                    <img src="./public/addsvg/search.svg" alt="" class="icon3" />
 
-                    <button class="btn btn-primary bg-blue px-4"> <img src="public/svg/search.svg" alt="search"> </button>
+                    <input type="text" name="search" placeholder="Search consultant here ..." class="border-start border-secondary" id="searchHere" />
+
+                    <img src="./public/addsvg/mic.svg" alt="" class="icon3" />
 
                 </div>
-
+                    
+                <div class="p-3 text-dark w-100 d-flex justify-content-between" id="alert"> #103,Park View Street, Plot No.57, Chandigarh, 160007 <span>&nbsp;</span> <a href="#" class="t" > Change </a>  </div>
+            
             </div>
             <!-- (adds) -->
-            <div class="d-block d-sm-none">
+            <div class="d-block d-md-none">
                 <div class="contianer-lg">
                     <div class="row">
-                        <div class="col-12 p-3">
+                        <div class="col-12">
                             <a href="#" class="" id="add1">
-                                <img src="./public/addsvg/1.svg" alt="" class="mx-3">
+                                <img src="./public/addsvg/1.svg" alt="" class="my-2">
                             </a>
                         </div>
-                        <div class="col-12 p-3">
+                        <div class="col-12">
                             <a href="#" class="" id="add2">
-                                <img src="./public/addsvg/2.svg" alt="" class="mx-3">
+                                <img src="./public/addsvg/2.svg" alt="" class="my-2">
                             </a>
                         </div>
-                        <div class="col-12 p-3">
+                        <div class="col-12">
                             <a href="#" class="" id="add3">
-                                <img src="./public/addsvg/3.svg" alt="" class="mx-3">
+                                <img src="./public/addsvg/3.svg" alt="" class="my-2">
                             </a>
                         </div>
 
@@ -186,16 +204,17 @@
         -->
         <section id="consultant">
             <div class="container-lg">
-                <div class="row py-5 my-0 my-md-3">
+                <div class="row py-3 py-md-5 my-0 my-md-3">
                     <!-- (two row heading) -->
                     <div class="col-12 col-lg-4 d-flex align-items-center justify-content-between py-3 py-lg-1 sideheading">
                         <div class="row  align-items-center text-start text-lg-center w-100">
                             <div class="col-8 col-lg-12">
-                                <h4 class="text-blue"> Top Rated Consultants </h4>
+                                <h4 class="text-blue d-inline" id="consultantHeading">  <span class="d-block d-lg-none">Live Consultant</span><span class="d-none d-lg-block">Top Rated Consultants</span> </h4>
                                 <div class="card-text"> Our trusted partner in navigation the immigration journey </div>
                             </div>
-                            <div class="col text-end my-2 last">
-                                <a href="#" class="btn btn-primary bg-blue py-2 px-lg-5 d-block"> View all </a>
+                            <div class="col text-end text-lg-center my-2 last">
+                                <a href="#" class="d-none d-md-inline btn btn-primary bg-blue px-5"> View all </a>
+                                <a href="#" class="d-inline d-md-none btn text-secondary"> See all </a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +226,7 @@
                                 <!-- (card1) -->
                                 <div class="card consultantBox">
                                     <img src="./public/cons/c1.jpeg" class="card-img" alt="...">
-                                    <div class="card-body">
+                                    <div class="cardBody">
                                         <h5 class="card-title">Visit Masters</h5>
                                         <div class="star_box">
                                             <img src="./public/svg/star.svg" alt="" />
@@ -216,10 +235,15 @@
                                             <img src="./public/svg/star.svg" alt="" />
                                             <img src="./public/svg/star.svg" alt="" />
                                         </div>
-                                        <p class="card-text"> Lorem Ipsum is simply dummy text for printing. </p>
-                                        <div class="d-flex justify-content-between broder border-top">
-                                            <a href="#" class="btn btn-sm btn-primary bg-blue">$15.00/ 15min</a>
-                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="d-none"> </a>
+                                        <div class="d-flex d-md-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
                                         </div>
                                     </div>
                                 </div>
@@ -227,91 +251,140 @@
 
                             <div class="col-4">
                                 <!-- (card2) -->
-                                <div class="instituteBox">
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c2.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-md-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
-
-                                    <div class="detail_box">
-
-                                        <h5 class="h5 text-white">Gray Matters</h5>
-                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
-
-                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
-                                    
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="col-4">
-                                <!-- (card2) -->
-                                <div class="instituteBox">
+                                <!-- (card3) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c3.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-md-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
-
-                                    <div class="detail_box">
-
-                                        <h5 class="h5 text-white">Gray Matters</h5>
-                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
-
-                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
-                                    
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="col-4">
-                                <!-- (card2) -->
-                                <div class="instituteBox">
-
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
-
-                                    <div class="detail_box">
-
-                                        <h5 class="h5 text-white">Gray Matters</h5>
-                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
-
-                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
-                                    
+                                <!-- (card4) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c4.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-md-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="col-4">
-                                <!-- (card2) -->
-                                <div class="instituteBox">
+                                <!-- (card5) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/cons/c5.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-md-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
-
-                                    <div class="detail_box">
-
-                                        <h5 class="h5 text-white">Gray Matters</h5>
-                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
-
-                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
-                                    
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
 
                             <div class="col-4">
-                                <!-- (card2) -->
-                                <div class="instituteBox">
+                                <!-- (card6) -->
+                                <div class="card consultantBox">
+                                    <img src="./public/inst/i1.jpeg" class="card-img" alt="...">
+                                    <div class="cardBody">
+                                        <h5 class="card-title">Visit Masters</h5>
+                                        <div class="star_box">
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <img src="./public/svg/star.svg" alt="" />
+                                        </div>
+                                        <div class="d-flex d-md-none justify-content-between rating">
+                                            <div class="lead"> Call &nbsp; +300 </div>
+                                            <img src="./public/svg/star.svg" alt="" />
+                                            <div class="lead"> <img src="./public/svg/star.svg" alt="" /> 4.5 </div>
+                                        </div>
+                                        <p class="card-text py-2"> Gray Matters SCO. 114, Main Market Sector 34, Chandigarh </p>
+                                        <div class="d-flex justify-content-between broder border-top pt-2   ">
+                                            <a href="#" class="btn btn-sm btn-primary bg-blue"> <span class="d-block d-lg-none">$1/min</span><span class="d-none d-lg-block">$15.00/ 15min</span></a>
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
-
-                                    <div class="detail_box">
-
-                                        <h5 class="h5 text-white">Gray Matters</h5>
-                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
-
-                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
-                                    
+                                            <a href="#" class=""> <img src="./public/svg/message.svg" alt="" class="img-fluid"> </a>
+                                        </div>
                                     </div>
-
                                 </div>
                             </div>
 
@@ -328,7 +401,7 @@
         -->
         <section id="institute">
             <div class="container-lg">
-                <div class="row py-5 my-0 my-md-3">
+                <div class="row py-3 py-md-5 my-0 my-md-3">
                     
                     <!-- ( institute cards ) -->
                     <div class="col">
@@ -356,11 +429,11 @@
                                 <!-- (card2) -->
                                 <div class="instituteBox">
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+                                    <img src="./public/inst/i2.jpeg" alt="" class="img-fluid inst_img h-100"/>
 
                                     <div class="detail_box">
 
-                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <h5 class="h5 text-white">Brills Institute</h5>
                                         <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
 
                                         <a href="#" class="text-white"> See Details &rightarrow;</a>
@@ -374,11 +447,11 @@
                                 <!-- (card2) -->
                                 <div class="instituteBox">
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+                                    <img src="./public/inst/i3.jpeg" alt="" class="img-fluid inst_img h-100"/>
 
                                     <div class="detail_box">
 
-                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <h5 class="h5 text-white">Eli Institute</h5>
                                         <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
 
                                         <a href="#" class="text-white"> See Details &rightarrow;</a>
@@ -392,11 +465,29 @@
                                 <!-- (card2) -->
                                 <div class="instituteBox">
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+                                    <img src="./public/inst/i4.jpeg" alt="" class="img-fluid inst_img h-100"/>
 
                                     <div class="detail_box">
 
-                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <h5 class="h5 text-white">Touchstone</h5>
+                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34,Chandigarh</div>
+
+                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
+                                    
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <!-- (card2) -->
+                                <div class="instituteBox">
+
+                                    <img src="./public/inst/i5.jpeg" alt="" class="img-fluid inst_img h-100"/>
+
+                                    <div class="detail_box">
+
+                                        <h5 class="h5 text-white">British Institute</h5>
                                         <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
 
                                         <a href="#" class="text-white"> See Details &rightarrow;</a>
@@ -410,29 +501,11 @@
                                 <!-- (card2) -->
                                 <div class="instituteBox">
 
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
+                                    <img src="./public/inst/i6.jpeg" alt="" class="img-fluid inst_img h-100"/>
 
                                     <div class="detail_box">
 
-                                        <h5 class="h5 text-white">Gray Matters</h5>
-                                        <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
-
-                                        <a href="#" class="text-white"> See Details &rightarrow;</a>
-                                    
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="col-4">
-                                <!-- (card2) -->
-                                <div class="instituteBox">
-
-                                    <img src="./public/inst/i1.jpeg" alt="" class="img-fluid inst_img h-100"/>
-
-                                    <div class="detail_box">
-
-                                        <h5 class="h5 text-white">Gray Matters</h5>
+                                        <h5 class="h5 text-white">Mantrin Institute</h5>
                                         <div class="card-text text-white">SCO. 114, Main Market Sector 34, Chandigarh</div>
 
                                         <a href="#" class="text-white"> See Details &rightarrow;</a>
@@ -445,14 +518,15 @@
                         </div>
                     </div>
                     <!-- (two row heading) -->
-                    <div class="col-12 col-lg-4 order-first order-lg-last d-flex align-items-center justify-content-between py-3 py-lg-1 sideheading">
+                    <div class="col-12 col-lg-4 order-first order-lg-last d-flex align-items-center justify-content-between py-2 py-lg-1 sideheading">
                         <div class="row  align-items-center text-start text-lg-center w-100">
-                            <div class="col-8 col-lg-12 first">
+                            <div class="col col-lg-8 col-lg-12 first">
                                 <h4 class="text-blue"> Popular Institutes </h4>
                                 <div class="card-text"> Lorem Ipsum is simply dummy text for printing and typesetting industry. </div>
                             </div>
-                            <div class="col text-end my-5 last">
-                                <a href="#" class="btn btn-primary bg-blue py-2 px-lg-5 d-block"> View all </a>
+                            <div class="col text-end text-lg-center my-3 last">
+                                <a href="#" class="d-none d-md-inline btn btn-primary bg-blue px-5"> View all </a>
+                                <a href="#" class="d-inline d-md-none text-end text-decoration-none text-secondary px-5"> See all </a>
                             </div>
                         </div>
                     </div>
@@ -466,7 +540,7 @@
             =======================
         -->
         <section class="" id="testimonial">
-            <div class="container-lg py-5  my-0 my-md-3">
+            <div class="container-lg py-0 py-md-5  my-0 my-md-3">
                 <!-- ( heading ) -->
                 <div class="heading py-3">
                     <div class="first">
@@ -474,7 +548,8 @@
                         <div class="h6 d-none d-md-block"> Satisfied client who achived their, immigration dreams with us </div>
                     </div>
                     <div class="last">
-                        <a href="#" class="btn btn-primary bg-blue px-5"> View all </a>
+                        <a href="#" class="d-none d-md-block btn btn-primary bg-blue px-5"> View all </a>
+                        <a href="#" class="d-block d-md-none btn text-secondary px-5"> See all </a>
                     </div>
                 </div>
                 <!-- ( client cards ) -->
@@ -577,7 +652,7 @@
             ================
         -->
         <section class="" id="blog">
-            <div class="container-lg py-5  my-0 my-md-3">
+            <div class="container-lg py-0 py-md-5  my-0 my-md-3">
                 <!-- ( heading ) -->
                 <div class="heading py-3">
                     <div class="first">
@@ -585,7 +660,8 @@
                         <div class="h6 d-none d-md-block"> Stay Updated with Our Latest Immigration Insights! </div>
                     </div>
                     <div class="last">
-                        <a href="#" class="btn btn-primary bg-blue px-5"> View all </a>
+                        <a href="#" class="d-none d-md-block btn btn-primary bg-blue px-5"> View all </a>
+                        <a href="#" class="d-block d-md-none btn text-secondary px-5"> See all </a>
                     </div>
                 </div>
                 <!-- ( ... ) -->
@@ -593,8 +669,10 @@
 
                     <div class="col-3">
                         <!-- (card1) -->
-                        <div class="card blogBox">
-                            <img src="./public/blog/b1.jpeg" class="card-img" alt="..."/>
+                        <div class="card blogBox">                            
+
+                            <img src="./public/blog/b1.jpeg" class="card-img d-block" alt="..."/>
+                            
                             <div class="card-body">
                                 <h5 class="card-title"> Immigration Challenges and Solutions: Overview </h5>
                                 <p class="card-text">Immigration challenges and solutions vary greatly depending on the country, region, and context.</p>
@@ -606,7 +684,7 @@
                     <div class="col-3">
                         <!-- (card2) -->
                         <div class="card blogBox">
-                            <img src="./public/blog/b1.jpeg" class="card-img" alt="..."/>
+                            <img src="./public/blog/b2.jpeg" class="card-img" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title"> How to Choose the Right Immigration Firm </h5>
                                 <p class="card-text">Choosing the right immigration firm is a crucial step in your journey to immigrate to a new country.</p>
@@ -618,7 +696,7 @@
                     <div class="col-3">
                         <!-- (card3) -->
                         <div class="card blogBox">
-                            <img src="./public/blog/b1.jpeg" class="card-img" alt="..."/>
+                            <img src="./public/blog/b3.jpeg" class="card-img" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title"> Immigration Process Myths vs. Facts </h5>
                                 <p class="card-text">To foster a better understanding of this issue, it's essential to distinguish between myths and facts.</p>
@@ -630,7 +708,7 @@
                     <div class="col-3">
                         <!-- (card4) -->
                         <div class="card blogBox">
-                            <img src="./public/blog/b1.jpeg" class="card-img" alt="..."/>
+                            <img src="./public/blog/b4.jpeg" class="card-img" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title"> Navigating the Immigration Process </h5>
                                 <p class="card-text">Immigrating to a new country is a life-changing decision that comes with its fair share of challenges.</p>
@@ -793,20 +871,20 @@
         -->
         <section class="d-block d-sm-none bg-white" id="menu">
             <div class="contianer-lg">
-                <div class="row mx-3 my-3">
+                <div class="row mx-3 py-3">
 
                     <div class="col-4">
-                        <a href="#" class="" id="add1">
+                        <a href="#" class="" id="home">
                             <img src="./public/menu/home.svg" alt="" class="mx-3">
                         </a>
                     </div>
                     <div class="col-4">
-                        <a href="#" class="" id="add2">
+                        <a href="#" class="" id="application">
                             <img src="./public/menu/application.svg" alt="" class="mx-3">
                         </a>
                     </div>
                     <div class="col-4">
-                        <a href="#" class="" id="add3">
+                        <a href="#" class="" id="profile">
                             <img src="./public/menu/profile.svg" alt="" class="mx-3">
                         </a>
                     </div>

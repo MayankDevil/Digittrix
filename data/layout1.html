@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<!--
+-   "Digittrix" second
+-   Developed by MayankDevil
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MayankDevil</title>
+    <!--
+        ---------
+        | style |
+        ---------
+    -->
+    <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
+
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+            color:var(--dark);
+            text-decoration: none;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+        }
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --dark: #343a40;
+        }
+
+        #main
+        {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-rows:6;
+        }
+        .logo
+        {
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 2pc;
+        }
+        header
+        {
+            padding: 1rem;
+        }
+        footer > div
+        {
+            display: grid;
+        }
+        section
+        {
+            padding:2rem 0;
+        }
+
+        .block
+        {
+            display: block;
+            padding: 1rem;
+        }
+        .text-center
+        {
+            text-align: center;
+        }
+        h1
+        {
+            padding: 1rem;
+            font-weight: bolder;
+            line-height: 4pc;
+            font-size: 3pc;
+        }
+        h2
+        {
+            padding: 1rem;
+            line-height: 3pc;
+            font-size: 2pc;
+        }
+        h4
+        {
+            font-weight: normal;
+            line-height: 3rem;
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        p
+        {
+            line-height: 2rem;
+            font-size: 1.1rem;            
+        }
+        a
+        {
+            display: block;
+            color: var(--dark);
+            font-size: 1.1rem;
+            text-decoration: underline;
+        }
+
+        .row
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+        .row .first
+        {
+            padding: 1rem;  
+        }
+        .row .last
+        {
+        }
+
+        .image
+        {
+            width:100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .btn
+        {
+            display: inline-block;
+            margin: 20px;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color:var(--dark);
+            border: 2px solid var(--dark);
+            border-radius: 5px;
+        }
+        .hr
+        {
+            display:block;
+            margin: 0 1rem;
+            border: 1px solid var(--dark);
+        }
+        .socialBox
+        {
+            padding: 1rem;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--
+        ------------------
+        | main container |
+        ------------------
+    -->
+    <main id="main">
+        
+        <!--
+            ==================
+            [ header section ] -------
+            ==================
+        -->
+        <header>
+            <div class="text-center">
+                <h1 > LOGO </div>              
+            </div>
+        </header>
+        <!--
+            =============
+            [ section 1 ] -------
+            =============
+        -->
+        <section class="">
+            <div class="block text-center">
+
+                <h1> Email Template </h1>
+
+                <!-- (first) -->
+                <div class="first">
+                    
+                    <img src="https://mayankdevil.github.io/Digittrix/data/1.png" class="image">
+
+                </div>
+                <!-- (last) -->
+                <div class="last">
+                    
+                    <h4>  Boost your emails with Blush! Create dope emails easy and fast!  Install the Blush plugin to customize all the illustrations!  </h4>
+
+                    <a href="" class="btn"> Try it now! </a>
+
+                </div>
+                
+            </div>
+        </section>
+        <!--
+            =============
+            [ section 2 ] -------
+            =============
+        -->
+        <section class="">
+            <div class="row">
+                <!-- (first) -->
+                <div class="first">
+                    
+                    <img src="https://mayankdevil.github.io/Digittrix/data/2.png" class="image">
+
+                </div>
+                <!-- (last) -->
+                <div class="last">
+                    
+                    <h2> Customize this email template! </h2>
+
+                    <h4>  Boost your emails with Blush! Create dope emails easy and fast!  </h4>
+
+                    <a href="" class="btn"> Try it now! </a>
+
+                </div>
+                
+            </div>
+        </section>
+        <!--
+            =============
+            [ section 3 ] -------
+            =============
+        -->
+        <section class="">
+            <div class="row">
+                <!-- (last) -->
+                <div class="last">
+                    
+                    <h2> Customize this email template! </h2>
+
+                    <h4>  Boost your emails with Blush! Create dope emails easy and fast!  </h4>
+
+                    <a href="" class="btn"> Try it now! </a>
+
+                </div>
+                <!-- (first) -->
+                <div class="first">
+                    
+                    <img src="https://mayankdevil.github.io/Digittrix/data/3.png" class="image">
+
+                </div>
+                
+            </div>
+        </section>
+        <!--
+            =============
+            [ section 4 ] -------
+            =============
+        -->
+        <section class="">
+            <div class="row">
+                <!-- (first) -->
+                <div class="first">
+                    
+                    <img src="https://mayankdevil.github.io/Digittrix/data/4.png" class="image">
+
+                </div>
+                <!-- (last) -->
+                <div class="last">
+                    
+                    <h2> Customize this email template! </h2>
+
+                    <h4>  Boost your emails with Blush! Create dope emails easy and fast!  </h4>
+
+                    <a href="" class="btn"> Try it now! </a>
+
+                </div>
+                
+            </div>
+        </section>
+        <!--
+            =============
+            [ section 5 ] -------
+            =============
+        -->
+        <section class="">
+            <div class="block">
+                    
+                <h4>Boost your emails with Blush! Create dope emails easy and fast! Install the Blush plugin to customize all the illustrations!</h4>
+
+                <h4>Create the coolest emails!</h4>
+
+            </div>
+        </section>
+
+        <div class="hr"></div>
+        <!--
+            ==================
+            [ footer section ] -------
+            ==================
+        -->
+        <section class="">
+            <div class="block text-center">
+                    
+                <p> Corporation You are receiving this email because you opted in via our website.</p>
+
+                <div class="socialBox">
+                    <img src="https://mayankdevil.github.io/Digittrix/data/media.png" class="social">
+                </div>
+
+                <p> Address, #PC </p>
+                <p> City, State. </p>
+                <p> <a href="#"> Unsubscribe </a> </p>
+
+
+                <div class="logo"> LOGO </div>
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+    <!--
+        ----------
+        | script |
+        ----------
+    -->
+    <!-- <script src="./src/js/script.js"></script> -->
+
+</body>
+
+</html>

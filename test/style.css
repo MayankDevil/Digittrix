@@ -1,0 +1,122 @@
+
+*{
+    border: none;
+    outline: none;
+}
+.new_btn{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius:3rem;
+    color:white;
+    background: linear-gradient(250.03deg, #FF7F7F 0%, #FF7FB7 98.93%);
+}
+#toggle_btn
+{
+    font-size: 1.5rem;
+}
+.image
+{
+    object-fit: contain;
+}
+#searchBar
+{
+    display: flex;
+}
+#searchbox
+{
+    border-radius:2rem
+}
+#searchFld
+{
+    border-radius:2rem
+}
+
+
+.featurebox
+{
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--bs-secondary);
+}
+.highBorder
+{
+    /* border:1px solid var(--bs-dark); */
+    border: 2px solid rgba(131, 131, 131, 0.25);
+    border-radius: 2rem;
+}
+#callbackbtn
+{
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--bs-dark);
+    border-radius: 3rem;
+}
+#footLink a{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem;
+    color:var(--bs-dark);
+    text-decoration: none;
+}
+#copyright
+{
+    border: 2px solid rgba(131, 131, 131, 0.25);
+
+}
+#social
+{
+    display: flex;
+}
+#social .media
+{
+    width: 50px;
+    width: 50px;
+}
+
+
+@media screen and (max-width:992px) {
+    #searchBar{
+        display: block;
+    }
+    #locationBtn
+    {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    #footlogo
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width:576px) {
+    
+    .textHeading
+    {
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+    }
+    :is(#linkbox1,
+    #linkbox2,
+    #linkbox3,
+    #linkbox4,
+    #linkbox5) a {
+
+        margin: 1rem auto;
+    }
+
+    :is(#linkbox1,
+    #linkbox2,
+    #linkbox3,
+    #linkbox4,
+    #linkbox5) a img{
+
+        margin: 1rem auto;
+    }
+
+    #footLink a{
+        display: inline-block;
+        padding: 1rem;
+        margin: 0;
+    }
+}
